@@ -41,4 +41,19 @@ fn main() {
     let z: f32 = 2.3;
     println!("{z}");
 
+    //NUMERIC OPERATIONS
+    let sum = 3+2;
+    let difference = 2-1;
+    let product = 8*3;
+    let quotient  = 56.7/32.2;
+    let truncated = -5/3;
+    let remainder = 3%2;
+
+    println!("{sum}");
+    println!("{difference}");
+    println!("{product}");
+    println!("{quotient}");
+    println!("{truncated}");
+    println!("{remainder}");
+
 }
