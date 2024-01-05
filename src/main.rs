@@ -22,4 +22,23 @@ fn main() {
        //println!("Shadowed x in local scope {x}");
     //}
    //println!("out of scope shadowed {x}");
+//----------------------------------------------
+//---------DATA TYPES--------------------------
+//----------------------------------------------
+    //Scaler data types: data types that contain a single value
+    //Rust has 4 primary scaler data types
+    // Intergers, Floating-Numbers, Booleans, and Character
+
+    //Interger Types
+    //Integer could be unsigned (staring with u) or signed (starting with i)
+    //u8, u16, u32, u64, u128, usize
+    let x:u32 = 123;
+    //i8, i16, i32, i64, i128, isize
+    let y:i32 = -23;
+    println!("{x}, {y}");
+    
+    //Floating point number
+    let z: f32 = 2.3;
+    println!("{z}");
+
 }
