@@ -14,12 +14,12 @@ fn main() {
 //------- SHADOWING  ---------------------------
 //----------------------------------------------
     //Creating a immutable variable
-   let x = 10;
-   println!("value of x in main scope before it is overshadowed : {x}");
-   let x = x+1; //over-shadowing variable
-   {
-       let x = 23;
-       println!("Shadowed x in local scope {x}");
-    }
-   println!("out of scope shadowed {x}");
+   //let x = 10;
+   //println!("value of x in main scope before it is overshadowed : {x}");
+   //let x = x+1; //over-shadowing variable
+   //{
+      // let x = 23;
+       //println!("Shadowed x in local scope {x}");
+    //}
+   //println!("out of scope shadowed {x}");
 }
