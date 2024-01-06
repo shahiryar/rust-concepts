@@ -57,10 +57,23 @@ fn main() {
     //println!("{remainder}");
 
 //------COMPOUND DATATYPES-------------------
-    //Tuples
+    //Tuples: Fixed size, various datatypes, indexed and accessed via dot index
     let tup:(u8, i8, i8, i32) = (0, -2, -1, -432);
     let zero = tup.0;
     let minus_two = tup.1;
     println!("{zero}");
     println!("{minus_two}");
+
+    //Array: Fixed size, single datatype for all elements, indexed and accessed via square bracket
+    //Declare an array with 10 u32 values
+    let array:[u32;10] = [23, 4, 91, 5, 82, 82, 50, 34, 10, 76];
+    let el1 = array[1];
+    println!("{el1}");
+
+    //Declare an array with size 12 filled with the values '3' in all places
+    let array=[3; 12];
+    let el12 = array[11];
+    println!("{el12}");
+    
+    
 }
