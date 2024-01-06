@@ -78,9 +78,15 @@ fn main() {
 //----------------------------------------------------
 //------FUNCTIONS-------------------------------------
 //----------------------------------------------------
-    call_me();
+    //call_me();
+    let sum = sum_two_nums(12, 12);
+    println!("{sum}");
 }
 
 fn call_me(){
     println!("Outer Function was called!");
+}
+
+fn sum_two_nums(num1: i32, num2:i32)->i32{
+    num1+num2
 }
