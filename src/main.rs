@@ -98,7 +98,16 @@ fn main() {
     //    x + 1
     //};
     //Note in the statment above the block expression's last line
- //here is some change
+//----------------------------------------------------
+//------CONDITIONS-------------------------------------
+//----------------------------------------------------
+    //if condition
+    let x = 10;
+    if x>11{
+        println!("X is greater than 11");
+    }else{
+        println!("X is smaller than 11");
+    }
 }
 
 fn call_me(){
