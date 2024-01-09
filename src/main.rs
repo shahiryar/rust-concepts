@@ -79,13 +79,13 @@ fn main() {
 //------FUNCTIONS-------------------------------------
 //----------------------------------------------------
     //call_me();
-    let sum = sum_two_nums(12, 12);
-    println!("{sum}");
+    //let sum = sum_two_nums(12, 12);
+    //println!("{sum}");
     //Expression versus Statements
     //Below is an example of assignment with an expression
-    let mut x = 10;
-    let y = x = 11;
-    println!("{x}"); 
+    //let mut x = 10;
+    //let y = x = 11;
+    //println!("{x}"); 
     //Below is an example of a failed assignment with a statement
     //Expressions are evaluated while statements do not return a value
     //let x = (let y = 10);
@@ -93,15 +93,12 @@ fn main() {
 
     
     //A code block is also an expression
-    let y = {
-        let x = 10;
-        x + 1
-    };
-    //Note in the statment above the block expression's last line `x+1` does not have a semicolon in the end
-    //putting a semicolon in the end of an expression makes it a statment
-    //Therefore the code block returns a value ie 11
-    println!("{y}");
-
+    //let y = {
+    //    let x = 10;
+    //    x + 1
+    //};
+    //Note in the statment above the block expression's last line
+ //here is some change
 }
 
 fn call_me(){
