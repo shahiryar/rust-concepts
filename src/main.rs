@@ -117,6 +117,59 @@ fn main() {
     } else{
         println!("Neither X nor Y is greater than 11");
     }
+    //if else are expressions which means that could be used to assign values to let
+    let x = if x<11 { 12 } else { x };//return types of if else must be same!
+    //let x = if x<11 { 12 } else { "Eleven" } // will return a compiler error
+    println!("the value of x now is {x}");
+//----------------------------------------------------
+//------REPITIONS AND LOOPS---------------------------
+//----------------------------------------------------
+    //loop a number of times, without break statement loop runs indefinitly
+    let mut count = 0;
+    loop{
+        count+=1;
+        println!("Counting {count}");
+        if count == 10{
+            break
+        }
+    }
+    
+    //loop allows for returning a value as well
+    //expression after break is returned
+    //break acts as a return statement
+    //if there is nothing after the break statments, unit () is returned
+    let mut count = 0;//shadowing doesn't carry on the mutability
+    let result = loop{
+        count+=1;
+        if count==10{
+        break count;//semicolon here is optional!
+        }
+    };//note a semicolon after the loop whose value is bound to the variable!
+    println!("Result returned from the loop is {result}");
+   
+    //Loop labels to disambiguate between multiple nested loops
+    //break and continue in a nested loop apply to the outermost loop only
+    //in order to specify which loop to break labels can be assigned to each loop
+    let mut count = 0;
+    'counting_up: loop{
+        println!("Count is {count}");
+
+        let mut remaining = 10;
+
+        loop {
+            println!("Remaining = {remaining}");
+            if remaining == 9{
+                break;
+            }
+            if count ==2{
+                break 'counting_up;
+            }
+            remaining-=1;
+        }
+        count+=1
+    }
+    println!("End count = {count}");
+
 }
 
 fn call_me(){
