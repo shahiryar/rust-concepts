@@ -108,6 +108,15 @@ fn main() {
     }else{
         println!("X is smaller than 11");
     }
+    //Handling Multiple Conditions with else if
+    let y = 12;
+    if x > 11{
+        println!("At least X is greater than 11");
+    } else if y > 11{
+        println!("X is not but Y is greater than 11");
+    } else{
+        println!("Neither X nor Y is greater than 11");
+    }
 }
 
 fn call_me(){
