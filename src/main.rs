@@ -170,6 +170,14 @@ fn main() {
     }
     println!("End count = {count}");
 
+    //While Loop
+    let threshold = 10;
+    let mut register = 0;
+    while register<threshold{
+        println!("Registered {register}");
+        register+=1;
+    }
+
 }
 
 fn call_me(){
