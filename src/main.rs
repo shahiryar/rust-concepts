@@ -188,6 +188,17 @@ fn main() {
         index+=1;
     }
     
+    //Looping through List with a for loop
+    println!("Looping through the array with a for loop");
+    for element in array{
+        println!("{element}");
+    }
+
+    //Using For loop in a range
+    println!("For loop for a number of times in reverse");
+    for i in (1..=4).rev(){ // (a..=b) is [a,b] and (a..b) is [a,b)
+        println!("{i}");
+    }
 
 }
 
