@@ -177,6 +177,17 @@ fn main() {
         println!("Registered {register}");
         register+=1;
     }
+    println!("");
+    //Looping through List
+    let mut index = 0;
+    const ARRAY_SIZE:usize = 10;//can not be a variable! if is used to fix the array size
+    let array:[i8;ARRAY_SIZE] = [10, 9, 2, 8, 12, 29, 67, 1, 0, 21];
+    
+    while index<ARRAY_SIZE{
+        println!("Index {index} : {}",array[index]);
+        index+=1;
+    }
+    
 
 }
 
