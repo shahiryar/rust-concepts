@@ -102,103 +102,111 @@ fn main() {
 //------CONDITIONS-------------------------------------
 //----------------------------------------------------
     //if condition
-    let x = 10;
-    if x>11{
-        println!("X is greater than 11");
-    }else{
-        println!("X is smaller than 11");
-    }
+    //let x = 10;
+    //if x>11{
+    //   println!("X is greater than 11");
+    //}else{
+    //    println!("X is smaller than 11");
+    //}
     //Handling Multiple Conditions with else if
-    let y = 12;
-    if x > 11{
-        println!("At least X is greater than 11");
-    } else if y > 11{
-        println!("X is not but Y is greater than 11");
-    } else{
-        println!("Neither X nor Y is greater than 11");
-    }
+    //let y = 12;
+    //if x > 11{
+    //    println!("At least X is greater than 11");
+    //} else if y > 11{
+    //    println!("X is not but Y is greater than 11");
+    //} else{
+    //    println!("Neither X nor Y is greater than 11");
+    //}
     //if else are expressions which means that could be used to assign values to let
-    let x = if x<11 { 12 } else { x };//return types of if else must be same!
+    //let x = if x<11 { 12 } else { x };//return types of if else must be same!
     //let x = if x<11 { 12 } else { "Eleven" } // will return a compiler error
-    println!("the value of x now is {x}");
+    //println!("the value of x now is {x}");
 //----------------------------------------------------
 //------REPITIONS AND LOOPS---------------------------
 //----------------------------------------------------
     //loop a number of times, without break statement loop runs indefinitly
-    let mut count = 0;
-    loop{
-        count+=1;
-        println!("Counting {count}");
-        if count == 10{
-            break
-        }
-    }
+    //let mut count = 0;
+    //loop{
+    //    count+=1;
+    //    println!("Counting {count}");
+    //    if count == 10{
+    //        break
+    //    }
+   // }
     
     //loop allows for returning a value as well
     //expression after break is returned
     //break acts as a return statement
     //if there is nothing after the break statments, unit () is returned
-    let mut count = 0;//shadowing doesn't carry on the mutability
-    let result = loop{
-        count+=1;
-        if count==10{
-        break count;//semicolon here is optional!
-        }
-    };//note a semicolon after the loop whose value is bound to the variable!
-    println!("Result returned from the loop is {result}");
+   // let mut count = 0;//shadowing doesn't carry on the mutability
+    //let result = loop{
+     //   count+=1;
+     //   if count==10{
+     //   break count;//semicolon here is optional!
+     //   }
+    //};//note a semicolon after the loop whose value is bound to the variable!
+    //println!("Result returned from the loop is {result}");
    
     //Loop labels to disambiguate between multiple nested loops
     //break and continue in a nested loop apply to the outermost loop only
     //in order to specify which loop to break labels can be assigned to each loop
-    let mut count = 0;
-    'counting_up: loop{
-        println!("Count is {count}");
+    //let mut count = 0;
+    //'counting_up: loop{
+    //    println!("Count is {count}");
 
-        let mut remaining = 10;
+    //    let mut remaining = 10;
 
-        loop {
-            println!("Remaining = {remaining}");
-            if remaining == 9{
-                break;
-            }
-            if count ==2{
-                break 'counting_up;
-            }
-            remaining-=1;
-        }
-        count+=1
-    }
-    println!("End count = {count}");
+    //    loop {
+    //        println!("Remaining = {remaining}");
+    //        if remaining == 9{
+    //            break;
+    //        }
+    //        if count ==2{
+    //            break 'counting_up;
+    //        }
+    //        remaining-=1;
+    //    }
+    //    count+=1
+    //}
+    //println!("End count = {count}");
 
     //While Loop
-    let threshold = 10;
-    let mut register = 0;
-    while register<threshold{
-        println!("Registered {register}");
-        register+=1;
-    }
-    println!("");
+    //let threshold = 10;
+    //let mut register = 0;
+    //while register<threshold{
+    //    println!("Registered {register}");
+    //    register+=1;
+    //}
+    //println!("");
     //Looping through List
-    let mut index = 0;
-    const ARRAY_SIZE:usize = 10;//can not be a variable! if is used to fix the array size
-    let array:[i8;ARRAY_SIZE] = [10, 9, 2, 8, 12, 29, 67, 1, 0, 21];
+    //let mut index = 0;
+    //const ARRAY_SIZE:usize = 10;//can not be a variable! if is used to fix the array size
+    //let array:[i8;ARRAY_SIZE] = [10, 9, 2, 8, 12, 29, 67, 1, 0, 21];
     
-    while index<ARRAY_SIZE{
-        println!("Index {index} : {}",array[index]);
-        index+=1;
-    }
+    //while index<ARRAY_SIZE{
+    //    println!("Index {index} : {}",array[index]);
+    //    index+=1;
+    //}
     
     //Looping through List with a for loop
-    println!("Looping through the array with a for loop");
-    for element in array{
-        println!("{element}");
-    }
+    //println!("Looping through the array with a for loop");
+    //for element in array{
+    //    println!("{element}");
+    //}
 
     //Using For loop in a range
-    println!("For loop for a number of times in reverse");
-    for i in (1..=4).rev(){ // (a..=b) is [a,b] and (a..b) is [a,b)
-        println!("{i}");
-    }
+    //println!("For loop for a number of times in reverse");
+    //for i in (1..=4).rev(){ // (a..=b) is [a,b] and (a..b) is [a,b)
+    //    println!("{i}");
+    //}
+    
+
+
+//----------------------------------------------------
+//------OWNERSHIP-------------------------------------
+//----------------------------------------------------
+    //Ownership in rust enables guranteed memory safety without a grabage collector
+    //Safety is absence of undefined behaviours
 
 }
 
