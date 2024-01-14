@@ -206,7 +206,10 @@ fn main() {
 //------OWNERSHIP-------------------------------------
 //----------------------------------------------------
     //Ownership in rust enables guranteed memory safety without a grabage collector
-    //Safety is absence of undefined behaviours
+    //Safety is absence of undefined behaviour
+    //Rust presents its own way of thinking about the memory
+    // Variables in memory are stored in stacks for each scope
+
 
 }
 
